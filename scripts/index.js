@@ -102,7 +102,9 @@ function getCardElement(
   name = "Lugar sem nome",
   link = "./images/placeholder.jpg",
 ) {
-  const cardElement = cardTemplate.content.cloneNode(true);
+  const cardElement = cardTemplate.content
+    .querySelector(".card")
+    .cloneNode(true);
 
   const cardImage = cardElement.querySelector(".card__image");
   const cardTitle = cardElement.querySelector(".card__title");
