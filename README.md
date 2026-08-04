@@ -49,23 +49,22 @@ The project allows users to edit profile information, create new location cards,
 
 ## Project Structure
 
-project/
-
+src/
 ├── blocks/
-
+├── components/
+│ ├── Card.js
+│ ├── FormValidator.js
+│ ├── Popup.js
+│ ├── PopupWithForm.js
+│ ├── PopupWithImage.js
+│ ├── Section.js
+│ └── UserInfo.js
 ├── images/
-
-├── pages/
-
-├── scripts/
-
+├── page/
+│ ├── index.css
 │ └── index.js
-
 ├── vendor/
-
-├── index.html
-
-└── README.md
+└── index.html
 
 ## What I Learned
 

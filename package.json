@@ -1,0 +1,21 @@
+{
+  "name": "web_project_around_pt",
+  "version": "1.0.0",
+  "description": "Around The U.S. is an interactive web application developed during Sprint 8 of the TripleTen Web Development Program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplesmarco/web_project_around_pt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/simplesmarco/web_project_around_pt/issues"
+  },
+  "homepage": "https://github.com/simplesmarco/web_project_around_pt#readme"
+}

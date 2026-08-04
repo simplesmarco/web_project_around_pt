@@ -1,18 +1,16 @@
 export default class Card {
-  constructor(data, templateSelector, handleImageClick) {
+  constructor(data, templateSelector, handleCardClick) {
     this._name = data.name;
     this._link = data.link;
     this._templateSelector = templateSelector;
-    this._handleImageClick = handleImageClick;
+    this._handleCardClick = handleCardClick;
   }
 
   _getTemplate() {
-    const cardElement = document
+    return document
       .querySelector(this._templateSelector)
       .content.querySelector(".card")
       .cloneNode(true);
-
-    return cardElement;
   }
 
   _handleLikeButtonClick() {
@@ -34,7 +32,10 @@ export default class Card {
     });
 
     this._image.addEventListener("click", () => {
-      this._handleImageClick(this._name, this._link);
+      this._handleCardClick({
+        name: this._name,
+        link: this._link,
+      });
     });
   }
 
