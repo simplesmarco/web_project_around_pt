@@ -182,3 +182,30 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   cursor: default;
 }
+
+.popup__content_type_delete {
+  min-height: 181px;
+  padding: 34px 36px 36px;
+}
+
+.popup__form_type_delete {
+  margin-top: 38px;
+}
+
+.popup__content_type_avatar {
+  min-height: 0;
+  padding-bottom: 36px;
+}
+
+.popup__form_type_avatar {
+  margin-top: 35px;
+}
+
+.popup__form_type_avatar .popup__input-error {
+  min-height: 15px;
+  margin-top: 5px;
+}
+
+.popup__form_type_avatar .popup__button {
+  margin-top: 20px;
+}

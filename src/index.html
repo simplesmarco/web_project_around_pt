@@ -19,7 +19,18 @@
 
       <main class="content">
         <section class="profile page__section">
-          <img class="profile__image" src="./images/avatar.jpg" alt="Avatar" />
+          <div class="profile__avatar-container">
+            <img
+              class="profile__image"
+              src="./images/avatar.jpg"
+              alt="Avatar"
+            />
+            <button
+              class="profile__avatar-edit-button"
+              type="button"
+              aria-label="Alterar foto do perfil"
+            ></button>
+          </div>
           <div class="profile__info">
             <h1 class="profile__title">Jacques Cousteau</h1>
             <button
@@ -129,6 +140,25 @@
         </div>
       </div>
 
+      <div class="popup" id="delete-popup">
+        <div class="popup__content popup__content_type_delete">
+          <button
+            aria-label="Fechar pop-up"
+            class="popup__close"
+            type="button"
+          ></button>
+
+          <h3 class="popup__title">Tem certeza?</h3>
+
+          <form
+            class="popup__form popup__form_type_delete"
+            id="delete-card-form"
+          >
+            <button class="button popup__button" type="submit">Sim</button>
+          </form>
+        </div>
+      </div>
+
       <div class="popup" id="image-popup">
         <div class="popup__content popup__content_content_image">
           <button
@@ -138,6 +168,37 @@
           ></button>
           <img alt="" class="popup__image" src="#" />
           <p class="popup__caption"></p>
+        </div>
+      </div>
+
+      <div class="popup" id="avatar-popup">
+        <div class="popup__content popup__content_type_avatar">
+          <button
+            aria-label="Fechar pop-up"
+            class="popup__close"
+            type="button"
+          ></button>
+
+          <h3 class="popup__title">Alterar a foto do perfil</h3>
+
+          <form
+            class="popup__form popup__form_type_avatar"
+            id="avatar-form"
+            novalidate
+          >
+            <input
+              class="popup__input popup__input_type_avatar"
+              id="avatar-input"
+              name="avatar"
+              placeholder="Link da imagem"
+              type="url"
+              required
+            />
+
+            <span class="popup__input-error" id="avatar-input-error"></span>
+
+            <button class="button popup__button" type="submit">Salvar</button>
+          </form>
         </div>
       </div>
 
